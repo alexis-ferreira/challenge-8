@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Spartan;
+    src: url(../polices/Spartan/Spartan-VariableFont_wght.ttf),
+    url(../polices/Spartan/static/Spartan-Medium.ttf),
+    url(../polices/Spartan/static/Spartan-SemiBold.ttf),
+    url(../polices/Spartan/static/Spartan-Bold.ttf);
+}
+
+
+/* --------- GENERAL ---------- */
+
+
+
+
+/* ------------ MEDIA QUERIES -------------- */
+
+@media screen AND (max-width: 480px){
+
+    body
+    {
+        background-color: gray;
+    }
+
+    header>.header-desktop
+    {
+        display: none;
+    }
+
+    header .header-responsive
+    {
+        padding: 40px 0;
+
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7007003484987745) 100%);
+    }
+
+    header .header-responsive>.btn-menu-responsive
+    {
+        padding-left: 23px;
+
+        background-image: url(../images/logo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70px;
+    }
+
+    header .header-responsive>.btn-menu-responsive>img
+    {
+        height: 17px;
+    }
+
+    header .header-responsive>.menu-responsive
+    {
+        display: none;
+    }
+}
