@@ -16,9 +16,18 @@
 
 @media screen AND (max-width: 480px){
 
+    /* --------> GENERAL */
+
     body
     {
-        background-color: gray;
+        min-width: 350px;
+    }
+
+    /* ---------> HEADER */
+
+    header
+    {
+        position: relative;
     }
 
     header>.header-desktop
@@ -30,7 +39,14 @@
     {
         padding: 40px 0;
 
-        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7007003484987745) 100%);
+        background: linear-gradient(#000000b5, #0000);
+
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+
+        z-index: 2;
     }
 
     header .header-responsive>.btn-menu-responsive
@@ -52,4 +68,88 @@
     {
         display: none;
     }
+
+
+
+
+
+
+
+
+
+    /* ---------> MAIN */
+
+
+    /* -> SLIDER  */
+
+    main .containerSlider
+    {
+        position: relative;
+    }
+
+    main .containerSlider>#imgSlider
+    {
+        width: 100%;
+    }
+
+    main .containerSlider>.containerBtnSlider
+    {
+        display: flex;
+
+        height: 55px;
+        width: 112px;
+
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+    }
+
+    main .containerSlider>.containerBtnSlider>div
+    {
+        width: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: black;
+    }
+
+    main .containerSlider>.containerBtnSlider>div>img
+    {
+        height: 20px;
+    }
+
+    main>.description
+    {
+        margin-top: 72px;
+        margin-left: 32px;
+    }
+
+    main .description>h2
+    {
+        font-size: 25px;
+        font-family: 'Spartan';
+        font-weight: bold;
+
+        line-height: 30px;
+
+        width: 300px;
+
+        margin-bottom: 15px;
+    }
+
+    main>.description>p
+    {
+        font-size: 12px;
+        font-family: 'Spartan';
+        font-weight: 500;
+
+        line-height: 20px;
+
+        color: hsl(0, 0%, 63%);
+
+        width: 350px;
+    }
+
 }
