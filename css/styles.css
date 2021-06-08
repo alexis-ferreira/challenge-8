@@ -46,7 +46,7 @@
 
         width: 100%;
 
-        z-index: 2;
+        z-index: 3;
     }
 
     header .header-responsive>#btn-menu-responsive
@@ -112,6 +112,20 @@
         font-size: 12px;
         font-family: 'Spartan';
         font-weight:600;
+    }
+
+    header #opacityMenuBurger
+    {
+        background-color: none;
+
+        transition: background-color 500ms;
+
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+
+        z-index: 2;
     }
 
 

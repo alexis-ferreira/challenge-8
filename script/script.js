@@ -110,6 +110,9 @@ let btnCloseMenuBurger = document.getElementById('closeMenuBurger');
 let menuBurger = document.getElementById('menu-responsive');
 // console.log(menuBurger);
 
+let opacityMenuBurger = document.getElementById('opacityMenuBurger');
+// console.log(opacityMenuBurger);
+
 
 // ----> SCRIPT 
 
@@ -120,6 +123,9 @@ btnMenuBurger.addEventListener('click', function(){
     setTimeout(() => {
         menuBurger.style.opacity = "1";
     }, 1);
+
+    opacityMenuBurger.style.height = window.innerHeight + "px";
+    opacityMenuBurger.style.backgroundColor = "rgba(0, 0, 0, 0.80)";
 })
 
 btnCloseMenuBurger.addEventListener('click', function(){
@@ -128,5 +134,9 @@ btnCloseMenuBurger.addEventListener('click', function(){
 
     setTimeout(() => {
         menuBurger.style.display = "none";
+
+        opacityMenuBurger.style.height = "0";
     }, 1000);
+
+    opacityMenuBurger.style.backgroundColor = "rgba(0, 0, 0, 0)";
 })
