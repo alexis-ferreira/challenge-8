@@ -105,7 +105,7 @@
 
     header .header-responsive>#menu-responsive>ul>li>a
     {
-        color: black;
+        color: hsl(0, 0%, 27%);
 
         text-decoration: none;
 
@@ -171,7 +171,7 @@
         justify-content: center;
         align-items: center;
 
-        background-color: black;
+        background-color: hsl(0, 0%, 27%);
     }
 
     main .containerSlider>.containerBtnSlider>div>img
@@ -209,6 +209,38 @@
         color: hsl(0, 0%, 63%);
 
         width: 350px;
+    }
+
+
+    /* --------> BUTTON SHOP */
+
+    main>.btnShop
+    {
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+
+    main>.btnShop>a
+    {
+        text-decoration: none;
+
+        text-transform: uppercase;
+
+        color: hsl(0, 0%, 27%);
+
+        font-family: 'Spartan';
+        font-size: 12px;
+        font-weight: 500;
+
+        margin-left: 32px;
+
+        letter-spacing: 10px;
+
+        background-image: url(../images/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        
+        padding-right: 75px;
     }
 
 }
