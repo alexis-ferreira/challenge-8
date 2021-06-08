@@ -90,3 +90,43 @@ previousBtn.addEventListener('click', function(){
         descriptionText.innerHTML = sourceTextSlider[1];
     }
 });
+
+
+
+// -----------> MENU BURGER RESPONSIVE
+
+// ----> VARIABLES
+
+// EVENT
+
+let btnMenuBurger = document.getElementById('btn-menu-responsive');
+// console.log(btnMenuBurger);
+
+let btnCloseMenuBurger = document.getElementById('closeMenuBurger');
+// console.log(btnCloseMenuBurger);
+
+// MENU
+
+let menuBurger = document.getElementById('menu-responsive');
+// console.log(menuBurger);
+
+
+// ----> SCRIPT 
+
+btnMenuBurger.addEventListener('click', function(){
+
+    menuBurger.style.display = "flex";
+
+    setTimeout(() => {
+        menuBurger.style.opacity = "1";
+    }, 1);
+})
+
+btnCloseMenuBurger.addEventListener('click', function(){
+
+        menuBurger.style.opacity = "0";
+
+    setTimeout(() => {
+        menuBurger.style.display = "none";
+    }, 1000);
+})
