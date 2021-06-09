@@ -39,6 +39,8 @@ header>.header-desktop
 
     position: absolute;
     top: 0;
+
+    z-index: 2;
 }
 
 header>.header-desktop>.logo
@@ -125,6 +127,59 @@ main .container-top .containerSlider>.containerBtnSlider>div>img
     height: 20px;
 }
 
+main .container-top .description
+{
+    margin-top: 100px;
+    margin-left: 100px;
+
+    width: 100%;
+}
+
+main .container-top .description>h2
+{
+    font-size: 32px;
+    font-weight: 600;
+
+    width: 390px;
+
+    line-height: 40px;
+
+    margin-bottom: 30px;
+}
+
+main .container-top .description>p
+{
+    font-size: 12px;
+
+    color: hsl(0, 0%, 63%);
+
+    width: 410px;
+
+    line-height: 20px;
+
+    margin-bottom: 30px;
+}
+
+main .container-top .description .btnShop>a
+{
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    color: hsl(0, 0%, 27%);
+
+    font-family: 'Spartan';
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 10px;
+
+    background-image: url(../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    padding-right: 75px;
+}
 
 
 
@@ -314,13 +369,15 @@ main .container-top .containerSlider>.containerBtnSlider>div>img
         height: 20px;
     }
 
-    main>.container-top .description
+    main>.container-top .description,main .container-bottom .description
     {
         margin-top: 72px;
         margin-left: 32px;
+
+        width: auto;
     }
 
-    main .container-top .description>h2
+    main .container-top .description>h2,main .container-bottom .description>h2
     {
         font-size: 25px;
         font-family: 'Spartan';
@@ -333,7 +390,7 @@ main .container-top .containerSlider>.containerBtnSlider>div>img
         margin-bottom: 15px;
     }
 
-    main>.container-top .description>p
+    main>.container-top .description>p,main .container-bottom .description>p
     {
         font-size: 12px;
         font-family: 'Spartan';
@@ -383,21 +440,23 @@ main .container-top .containerSlider>.containerBtnSlider>div>img
 
     /* -----> IMAGE MAIN */
 
-    main .container-img
+    main .container-bottom>.container-img, main .container-bottom>.container-img2
     {
         height: 265px;
 
         overflow: hidden;
     }
 
-    main .container-img>img
+    main .container-bottom .container-img>img
     {
         width: 100%;
     }
 
-    main .container-img>img#img-light
+    main .container-bottom .container-img2>img#img-light
     {
         margin-top: 60px;
+
+        height: 260px;
     }
 
 }
