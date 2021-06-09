@@ -1,8 +1,5 @@
 'use strict';
 
-
-// -----------> SLIDER !!!!! RESPONSIVE !!!!!
-
 // => VARIABLES
 
 // SLIDER
@@ -30,7 +27,10 @@ let nextBtn = document.getElementById('nextImg');
 let sourceImgSlider = [
 "./images/mobile-image-hero-1.jpg",
 "./images/mobile-image-hero-2.jpg",
-"./images/mobile-image-hero-3.jpg"
+"./images/mobile-image-hero-3.jpg",
+"./images/desktop-image-hero-1.jpg",
+"./images/desktop-image-hero-2.jpg",
+"./images/desktop-image-hero-3.jpg"
 ];
 // console.log(sourceImgSlider);
 
@@ -51,24 +51,68 @@ let sourceTextSlider = [
 // console.log(sourceTextSlider);
 
 
+
+
+
+
+// -----------> SLIDER
+
 // SCRIPT
+
+document.addEventListener('DOMContentLoaded', function(){
+
+    if (screen.width <= 480){
+
+        imgSlider.setAttribute('src', sourceImgSlider[0]);
+
+    } else {
+
+        imgSlider.setAttribute('src', sourceImgSlider[3]);
+    }
+})
 
 nextBtn.addEventListener('click', function(){
 
-    if (imgSlider.getAttribute('src') == sourceImgSlider[0]){
-        // console.log("work");
-        imgSlider.setAttribute('src', sourceImgSlider[1]);
-        titleDescription.innerHTML = sourceTitleSlider[1];
-        descriptionText.innerHTML = sourceTextSlider[1];
+    if (screen.width <= 480){
 
-    } else if (imgSlider.getAttribute('src') == sourceImgSlider[1]){
-        imgSlider.setAttribute('src', sourceImgSlider[2]);
-        titleDescription.innerHTML = sourceTitleSlider[2];
-        descriptionText.innerHTML = sourceTextSlider[2];
+        if (imgSlider.getAttribute('src') == sourceImgSlider[0]){
+            // console.log("work");
+            imgSlider.setAttribute('src', sourceImgSlider[1]);
+            titleDescription.innerHTML = sourceTitleSlider[1];
+            descriptionText.innerHTML = sourceTextSlider[1];
+    
+        } else if (imgSlider.getAttribute('src') == sourceImgSlider[1]){
+            imgSlider.setAttribute('src', sourceImgSlider[2]);
+            titleDescription.innerHTML = sourceTitleSlider[2];
+            descriptionText.innerHTML = sourceTextSlider[2];
+    
+        } else {
+            imgSlider.setAttribute('src', sourceImgSlider[0]);
+            titleDescription.innerHTML = sourceTitleSlider[0];
+            descriptionText.innerHTML = sourceTextSlider[0];
 
+        }
     } else {
-        imgSlider.setAttribute('src', sourceImgSlider[0]);        titleDescription.innerHTML = sourceTitleSlider[0];
-        descriptionText.innerHTML = sourceTextSlider[0];
+
+        if (imgSlider.getAttribute('src') == sourceImgSlider[3]){
+            // console.log("work1");
+            imgSlider.setAttribute('src', sourceImgSlider[4]);
+            titleDescription.innerHTML = sourceTitleSlider[1];
+            descriptionText.innerHTML = sourceTextSlider[1];
+    
+        } else if (imgSlider.getAttribute('src') == sourceImgSlider[4]){
+            // console.log("work2");
+            imgSlider.setAttribute('src', sourceImgSlider[5]);
+            titleDescription.innerHTML = sourceTitleSlider[2];
+            descriptionText.innerHTML = sourceTextSlider[2];
+    
+        } else {
+            // console.log("work3");
+            imgSlider.setAttribute('src', sourceImgSlider[3]);
+            titleDescription.innerHTML = sourceTitleSlider[0];
+            descriptionText.innerHTML = sourceTextSlider[0];
+        }
+
     }
 });
 
@@ -86,7 +130,8 @@ previousBtn.addEventListener('click', function(){
         descriptionText.innerHTML = sourceTextSlider[0];
 
     } else {
-        imgSlider.setAttribute('src', sourceImgSlider[1]);        titleDescription.innerHTML = sourceTitleSlider[1];
+        imgSlider.setAttribute('src', sourceImgSlider[1]);
+        titleDescription.innerHTML = sourceTitleSlider[1];
         descriptionText.innerHTML = sourceTextSlider[1];
     }
 });
