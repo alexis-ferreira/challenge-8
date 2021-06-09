@@ -185,6 +185,49 @@ main .container-top .description .btnShop>a
 
 
 
+/* ----------- CONTAINER BOTTOM -------------  */
+
+main .container-bottom
+{
+    display: flex;
+}
+
+main .container-bottom>.description
+{
+    max-width: 580px;
+
+    margin-right: 35px;
+    margin-left: 45px;
+    margin-top: 70px;
+}
+
+main .container-bottom>.description>h2
+{
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+main .container-bottom>.description>p
+{
+    width: 500px;
+
+    font-size: 12px;
+
+    color: hsl(0, 0%, 63%);
+
+    line-height: 20px;
+}
+
+
+
+
+
 
 
 
@@ -440,6 +483,11 @@ main .container-top .description .btnShop>a
 
     /* -----> IMAGE MAIN */
 
+    main .container-bottom
+    {
+        display: block;
+    }
+
     main .container-bottom>.container-img, main .container-bottom>.container-img2
     {
         height: 265px;
@@ -452,11 +500,16 @@ main .container-top .description .btnShop>a
         width: 100%;
     }
 
-    main .container-bottom .container-img2>img#img-light
+    main .container-bottom .container-img2
+    {
+        height: 265px;
+    }
+
+    main .container-bottom .container-img2>#img-light
     {
         margin-top: 60px;
 
-        height: 260px;
+        width: 100%;
     }
 
 }
