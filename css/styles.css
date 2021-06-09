@@ -254,6 +254,9 @@ main .containerSlider>.containerBtnSlider>div>img
     main .containerSlider
     {
         position: relative;
+
+        height: 100%;
+        width: 100%;
     }
 
     main .containerSlider>#imgSlider
