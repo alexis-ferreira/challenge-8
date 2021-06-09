@@ -96,12 +96,12 @@ main>.containerSlider>.containerBtnSlider
 {
     display: flex;
 
-    height: 55px;
-    width: 112px;
+    height: 80px;
+    width: 160px;
 
     position: absolute;
     bottom: 0;
-    right: -112px;
+    right: -160px;
 }
 
 main .containerSlider>.containerBtnSlider>div
