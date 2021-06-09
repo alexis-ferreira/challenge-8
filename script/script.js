@@ -141,19 +141,19 @@ previousBtn.addEventListener('click', function(){
     } else {
         
         if (imgSlider.getAttribute('src') == sourceImgSlider[3]){
-            // console.log("work1");
+            console.log("work1");
             imgSlider.setAttribute('src', sourceImgSlider[5]);
-            titleDescription.innerHTML = sourceTitleSlider[1];
-            descriptionText.innerHTML = sourceTextSlider[1];
-    
-        } else if (imgSlider.getAttribute('src') == sourceImgSlider[5]){
-            // console.log("work2");
-            imgSlider.setAttribute('src', sourceImgSlider[4]);
             titleDescription.innerHTML = sourceTitleSlider[2];
             descriptionText.innerHTML = sourceTextSlider[2];
     
+        } else if (imgSlider.getAttribute('src') == sourceImgSlider[5]){
+            console.log("work2");
+            imgSlider.setAttribute('src', sourceImgSlider[4]);
+            titleDescription.innerHTML = sourceTitleSlider[1];
+            descriptionText.innerHTML = sourceTextSlider[1];
+    
         } else {
-            // console.log("work3");
+            console.log("work3");
             imgSlider.setAttribute('src', sourceImgSlider[3]);
             titleDescription.innerHTML = sourceTitleSlider[0];
             descriptionText.innerHTML = sourceTextSlider[0];
