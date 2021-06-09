@@ -243,4 +243,23 @@
         padding-right: 75px;
     }
 
+    /* -----> IMAGE MAIN */
+
+    main .container-img
+    {
+        height: 265px;
+
+        overflow: hidden;
+    }
+
+    main .container-img>img
+    {
+        width: 100%;
+    }
+
+    main .container-img>img#img-light
+    {
+        margin-top: 60px;
+    }
+
 }
