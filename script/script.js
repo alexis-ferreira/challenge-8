@@ -196,6 +196,8 @@ btnMenuBurger.addEventListener('click', function(){
 
     opacityMenuBurger.style.height = window.innerHeight + "px";
     opacityMenuBurger.style.backgroundColor = "rgba(0, 0, 0, 0.80)";
+
+    document.body.style.overflow = 'hidden';
 })
 
 btnCloseMenuBurger.addEventListener('click', function(){
@@ -209,4 +211,6 @@ btnCloseMenuBurger.addEventListener('click', function(){
     }, 1000);
 
     opacityMenuBurger.style.backgroundColor = "rgba(0, 0, 0, 0)";
+
+    document.body.style.overflow = 'initial';
 })
