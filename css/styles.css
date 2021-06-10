@@ -43,11 +43,11 @@ header>.header-desktop
     z-index: 2;
 }
 
-header>.header-desktop>.logo
+/* header>.header-desktop>.logo
 {
     display: flex;
     align-items: center;
-}
+} */
 
 header>.header-desktop>.logo>img
 {
@@ -63,6 +63,8 @@ header .header-desktop>.navbar>ul
 {
     display: flex;
     justify-content: space-between;
+
+    margin-top: 1px;
 }
 
 header .header-desktop>.navbar>ul>li>a
@@ -89,6 +91,11 @@ header .header-desktop .navbar>ul>li>.borderBottomHover
     margin-top: 5px;
 
     transition: width 300ms;
+}
+
+header .header-desktop .navbar>ul>.btn-menu
+{
+
 }
 
 
