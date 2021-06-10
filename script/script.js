@@ -214,3 +214,65 @@ btnCloseMenuBurger.addEventListener('click', function(){
 
     document.body.style.overflow = 'initial';
 })
+
+
+// VARIABLES HOVER
+
+// HOVER MENU
+
+let btnMenu = document.getElementsByClassName('btn-menu');
+// console.log(btnMenu);
+
+let borderBottomHover = document.getElementsByClassName('borderBottomHover');
+console.log(borderBottomHover);
+
+for (let i=0; i<btnMenu.length; i++){
+    btnMenu[i].addEventListener('mouseenter', function(){
+        borderBottomHover[i].style.width='15px';
+    })
+};
+
+for (let i=0; i<btnMenu.length; i++){
+    btnMenu[i].addEventListener('mouseleave', function(){
+        borderBottomHover[i].style.width='0';
+    })
+};
+
+
+// HOVER BUTTON SLIDER
+
+nextBtn.addEventListener('mouseenter', function(){
+    
+    nextBtn.style.backgroundColor = 'hsl(0, 0%, 27%)';
+})
+
+nextBtn.addEventListener('mouseleave', function(){
+    
+    nextBtn.style.backgroundColor = 'black';
+})
+
+previousBtn.addEventListener('mouseenter', function(){
+    
+    previousBtn.style.backgroundColor = 'hsl(0, 0%, 27%)';
+})
+
+previousBtn.addEventListener('mouseleave', function(){
+    
+    previousBtn.style.backgroundColor = 'black';
+})
+
+
+// HOVER BUTTON SHOP
+
+let btnShop = document.getElementById('buttonShop');
+// console.log(btnShop);
+
+btnShop.addEventListener('mouseenter', function(){
+
+    btnShop.style.color = 'hsl(0, 0%, 63%)';
+})
+
+btnShop.addEventListener('mouseleave', function(){
+
+    btnShop.style.color = 'hsl(0, 0%, 27%)';
+})

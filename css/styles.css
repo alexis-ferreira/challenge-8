@@ -78,6 +78,19 @@ header .header-desktop>.navbar>ul>li>a
     align-items: center;
 }
 
+header .header-desktop .navbar>ul>li>.borderBottomHover
+{
+    height: 2px;
+    width: 0px;
+
+    background-color: white;
+
+    margin: 0 auto;
+    margin-top: 5px;
+
+    transition: width 300ms;
+}
+
 
 
 
@@ -120,6 +133,10 @@ main .container-top .containerSlider>.containerBtnSlider>div
     align-items: center;
 
     background-color: black;
+
+    cursor: pointer;
+
+    transition: background-color 300ms;
 }
 
 main .container-top .containerSlider>.containerBtnSlider>div>img
@@ -179,6 +196,8 @@ main .container-top .description .btnShop>a
     background-position: right;
     
     padding-right: 75px;
+
+    transition: color 200ms;
 }
 
 
