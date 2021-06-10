@@ -224,6 +224,14 @@ main .container-bottom>.description>p
     line-height: 20px;
 }
 
+main .credit
+{
+    display: flex;
+    justify-content: center;
+
+    padding: 20px 0;
+}
+
 
 
 
@@ -510,6 +518,16 @@ main .container-bottom>.description>p
         margin-top: 60px;
 
         width: 100%;
+    }
+
+    main .credit
+    {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px 0;
     }
 
 }
